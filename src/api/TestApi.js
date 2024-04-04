@@ -68,7 +68,7 @@ const courses = [
             "TW": {"mrp": 36, "symbol": "NT$"},
             "ID": {"mrp": 4432, "symbol": "Rp"},
         },
-        default_price: {mrp: 1800, symbol: "₹"},
+        default_price: {mrp: 1800, symbol: "$"},
         demo_video: "https://www.youtube.com/embed/dszQJe9XY8U?list=PLFt5JBAXXlQrOAsrvVzSulKgDGIJ5xpcX",
         time_laps: {
             "-": "Introduction",
@@ -110,7 +110,7 @@ const courses = [
             "TW": {"mrp": 24, "symbol": "NT$"},
             "ID": {"mrp": 2432, "symbol": "Rp"},
         },
-        default_price: {mrp: 1200, symbol: "₹"},
+        default_price: {mrp: 1200, symbol: "$"},
         demo_video: "https://www.youtube.com/embed/dszQJe9XY8U?list=PLFt5JBAXXlQrOAsrvVzSulKgDGIJ5xpcX",
         time_laps: {
             "-": "Introduction",
