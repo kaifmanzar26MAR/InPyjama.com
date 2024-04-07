@@ -69,7 +69,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="w-full h-[70vh] lg:h-screen pt-16 z-10 relative flex items-center justify-center bg-gradient-to-t from-[#12111137] via-transparent to-[#12111137] ">
+      <div className="w-full h-[40vh] md:h-[70vh] lg:h-screen pt-16 z-10 relative flex items-center justify-center bg-gradient-to-t from-[#12111137] via-transparent to-[#12111137] ">
         <div className="w-[95%] lg:w-[80%] h-[80%] backdrop-blur-md  shadow-white shadow-inner bg-white bg-opacity-15 rounded-xl p-1 lg:p-5 flex flex-col justify-center items-center">
           <p className="text-xl lg:text-5xl  font-bold uppercase text-center">
             C-pointers almost killed my career. Please save yours!
@@ -84,14 +84,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full p-10 z-10 relative flex flex-col items-center justify-center bg-[#dddcd6] ">
-        <div className="w-full lg:h-screen h-fit lg:pb-0 pb-8">
+      <div className="w-full p-3 lg:p-10 z-10 relative flex flex-col items-center justify-center bg-[#dddcd6] ">
+        <div className="w-full  h-fit  pb-8">
           <h1 className="lg:text-3xl text-2xl">Our Courses</h1>
-          <div className="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+          <div className="carousel carousel-center w-full p-2 lg:p-4 space-x-4 rounded-box">
             {courses.map((e) => {
               return (
                 <div className="carousel-item">
-                  <div class="card lg:w-96 w-72 lg:h-full h-[60vh] bg-base-100  shadow-xl">
+                  <div class="card lg:w-96 w-72 h-[35vh] lg:h-full  bg-base-100  shadow-xl">
                     <figure>
                       <img src={e.template} alt="phone template" />
                     </figure>

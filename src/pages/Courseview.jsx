@@ -8,9 +8,7 @@ const Courseview = () => {
   console.log(id);
 
   useEffect(()=>{
-    window.scrollTo({
-      top:0,
-    })
+    window.scrollTo({top:0})
     const getLocation = () => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -106,13 +104,13 @@ const { template, time_laps, category, stack, language,default_price,prices,desc
 
         {/* Related courses */}
 
-        <div className="w-full lg:h-screen h-fit lg:pb-0 pb-8 p-4">
+        <div className="w-full  h-fit lg:pb-0 pb-8 p-4">
           <h1 className="lg:text-3xl text-2xl font-bold">Other related Courses</h1>
           <div className="carousel carousel-center w-full p-4 space-x-4 rounded-box">
             {courses.map((e) => {
               return (
                 <div className="carousel-item">
-                  <div class="card lg:w-96 w-72 lg:h-full h-[60vh] bg-base-100  shadow-xl">
+                  <div class="card lg:w-96 w-72 lg:h-full h-[40vh] bg-base-100  shadow-xl">
                     <figure>
                       <img src={e.template} alt="phone template" />
                     </figure>
