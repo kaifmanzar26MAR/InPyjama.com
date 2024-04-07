@@ -72,7 +72,7 @@ const { template, time_laps, category, stack, language,default_price,prices,desc
           <button className="btn text-white bg-red-500 hover:bg-red-600 w-fit ">Buy @_{prices ? (prices[country]? prices[country].symbol + "" + prices[country].mrp : default_price.symbol + "" + default_price.mrp ) : ""}</button>
         </div>
 
-        <div className="w-1/2  h-full">
+        <div className="w-1/2 sm-md:w-4/5 h-full">
           <img src="/piyush.png" alt="itankar" className="w-full h-full  object-contain " />
         </div>
       </div>
