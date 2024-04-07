@@ -17,6 +17,10 @@ const Home = () => {
 
   useEffect(() => {
     // Function to get the current location
+
+    window.scrollTo({
+      top:0,
+    })
     const getLocation = () => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(

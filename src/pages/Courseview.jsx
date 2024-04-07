@@ -8,6 +8,9 @@ const Courseview = () => {
   console.log(id);
 
   useEffect(()=>{
+    window.scrollTo({
+      top:0,
+    })
     const getLocation = () => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
