@@ -61,7 +61,7 @@ const { template, time_laps, category, stack, language,default_price,prices,desc
     <div className="">
 
     {/* heror section */}
-      <div className="hero_view h-[50vh] lg:h-screen w-full pt-14 sm-md:h-[30vh] bg-gradient-to-t from-yellow-500 via-yellow-300 to-yellow-500 relative flex ">
+      <div className="hero_view h-[50vh] lg:h-screen w-full pt-14 sm-md:h-[29vh] bg-gradient-to-t from-yellow-500 via-yellow-300 to-yellow-500 relative flex ">
 
         <div className="w-1/2 sm-md:w-[56%] flex flex-col gap-y-2 px-4 lg:px-8 items-start justify-center">
         <div className="w-full">
