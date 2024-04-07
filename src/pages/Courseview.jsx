@@ -63,16 +63,16 @@ const { template, time_laps, category, stack, language,default_price,prices,desc
     {/* heror section */}
       <div className="hero_view h-[50vh] lg:h-screen w-full pt-14 sm-md:h-[30vh] bg-gradient-to-t from-yellow-500 via-yellow-300 to-yellow-500 relative flex ">
 
-        <div className="w-1/2  flex flex-col gap-y-2 px-4 lg:px-8 items-start justify-center">
+        <div className="w-1/2 sm-md:w-full flex flex-col gap-y-2 px-4 lg:px-8 items-start justify-center">
         <div>
-          <p className='text-2xl lg:text-4xl font-bold' >let's Learn With us {name}</p>
-          <p className='font-semibold text-red-600 lg:text-2xl'>Course: {title}</p>
+          <p className='sm-md:text-xl text-2xl lg:text-4xl font-bold' >let's Learn With us {name}</p>
+          <p className='font-semibold text-red-600 sm-md:text-sm lg:text-2xl'>Course: {title}</p>
           <p className="text-gray-700 hidden lg:block w-96 truncate overflow-hidden">{description}</p>
         </div>
-          <button className="btn text-white bg-red-500 hover:bg-red-600 w-fit ">Buy Now @ {prices ? (prices[country]? prices[country].symbol + " " + prices[country].mrp : default_price.symbol + "" + default_price.mrp ) : ""}</button>
+          <button className="btn text-white bg-red-500 hover:bg-red-600 w-fit ">Buy @_{prices ? (prices[country]? prices[country].symbol + "" + prices[country].mrp : default_price.symbol + "" + default_price.mrp ) : ""}</button>
         </div>
 
-        <div className="w-1/2 h-full">
+        <div className="w-1/2  h-full">
           <img src="/piyush.png" alt="itankar" className="w-full h-full  object-contain " />
         </div>
       </div>
