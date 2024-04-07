@@ -110,7 +110,7 @@ const { template, time_laps, category, stack, language,default_price,prices,desc
             {courses.map((e) => {
               return (
                 <div className="carousel-item">
-                  <div class="card lg:w-96 w-72 lg:h-full h-[40vh] bg-base-100  shadow-xl">
+                  <div class="card lg:w-96 w-72 h-full  sm-md:h-[40vh] bg-base-100  shadow-xl">
                     <figure>
                       <img src={e.template} alt="phone template" />
                     </figure>
