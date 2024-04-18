@@ -12,11 +12,11 @@ const Navbar = () => {
         IN-PAJAMA
       </div></Link>
       <div className="second w-1/2  justify-between items-center hidden lg:flex">
-        <a className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Home</a>
-        <a className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">About</a>
-        <a className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Courses</a>
-        <a className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Blogs</a>
-        <a className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Youtube</a>
+        <Link to={'/'}><div className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Home</div></Link>
+        <Link to={'/about'}><div className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">About</div></Link>
+        <Link to={'/courses'}><div className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Courses</div></Link>
+        <Link to={'/blogs'}><div className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Blogs</div></Link>
+        <Link to={'/youtube'}><div className='w-24 p-2 bg-gray-900 text-white flex justify-center items-center rounded-full hover:bg-gray-950 cursor-pointer' href="#">Youtube</div></Link>
       </div>
       <div className="third w-24 flex justify-center items-center bg-gray-900 hover:bg-gray-950 cursor-pointer p-2 text-white rounded-full">
         Avtar

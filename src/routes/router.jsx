@@ -3,6 +3,10 @@ import Main from "../layout/Main";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Courseview from "../pages/Courseview";
+import About from "../pages/About";
+import Courses from "../pages/Courses";
+import Blogs from "../pages/Blogs";
+import Youtube from "../pages/Youtube";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +20,22 @@ const router = createBrowserRouter([
       {
         path:`/courseview/:id`,
         element:<Courseview/>
+      },
+      {
+        path:'/about',
+        element:<About/>
+      },
+      {
+        path:'/courses',
+        element:<Courses/>
+      },
+      {
+        path:'/blogs',
+        element:<Blogs/>
+      },
+      {
+        path:'/youtube',
+        element:<Youtube/>
       }
     ],
   },
