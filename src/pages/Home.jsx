@@ -19,9 +19,8 @@ const Home = () => {
     // Function to get the current location
 
     window.scrollTo({
-      top:0,
-    })
-
+      top: 0,
+    });
 
     const getLocation = () => {
       if (navigator.geolocation) {
@@ -99,7 +98,7 @@ const Home = () => {
                     </figure>
                     <div class="card-body lg:p-8 p-4">
                       <h2 class="card-title">
-                        <span className='truncate'>{e.name}</span>
+                        <span className="truncate">{e.name}</span>
                         <div class="badge badge-secondary">NEW</div>
                       </h2>
                       <p className="truncate">{e.title}</p>
@@ -132,14 +131,25 @@ const Home = () => {
           </div>
         </div>
 
-
         <div className="w-full  h-fit  pb-8">
           <h1 className="lg:text-3xl text-2xl">Our Podcasts</h1>
           <div className="carousel carousel-center w-full p-2 lg:p-4 space-x-4 rounded-box">
             {courses.map((e) => {
               return (
                 <div className="carousel-item">
-                  
+                  {e.demo_video ? (
+                    <iframe
+                      src={e.demo_video}
+                      title="Section 1: 1. What to Imagine? | (Preview) C Pointers: Secrets every Embedded Engineers MUST know!"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                      className="h-[260px] w-[400px]"
+                    ></iframe>
+                  ) : (
+                    <img src={template} alt="template" />
+                  )}
                 </div>
               );
             })}
