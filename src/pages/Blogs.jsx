@@ -2,8 +2,8 @@ import React from 'react'
 
 const Blogs = () => {
   return (
-    <div>
-      Blog
+    <div className='min-h-screen pt-16'>
+      Hello Blog
     </div>
   )
 }
