@@ -21,6 +21,8 @@ const Home = () => {
     window.scrollTo({
       top:0,
     })
+
+
     const getLocation = () => {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -63,7 +65,7 @@ const Home = () => {
     <div>
       <div id="cara" className="w-full  fixed top-0 z-0">
         <img
-          src="./cara/comp.jpg"
+          src="./cara/bg1.jpg"
           alt="cara image"
           className="w-full h-screen object-cover object-center"
         />
@@ -124,6 +126,20 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+
+        <div className="w-full  h-fit  pb-8">
+          <h1 className="lg:text-3xl text-2xl">Our Podcasts</h1>
+          <div className="carousel carousel-center w-full p-2 lg:p-4 space-x-4 rounded-box">
+            {courses.map((e) => {
+              return (
+                <div className="carousel-item">
+                  
                 </div>
               );
             })}
