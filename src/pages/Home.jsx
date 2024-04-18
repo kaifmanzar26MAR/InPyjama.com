@@ -145,7 +145,7 @@ const Home = () => {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       referrerpolicy="strict-origin-when-cross-origin"
                       allowfullscreen
-                      className="h-[260px] w-[400px]"
+                      className="w-[250px] h-[150px] lg:h-[260px] lg:w-[400px]"
                     ></iframe>
                   ) : (
                     <img src={template} alt="template" />
